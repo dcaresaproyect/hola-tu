@@ -1,15 +1,23 @@
 {
-  "name": "hola-tu",
-  "version": "1.0.0",
-  "scripts": {
-    "build": "tsc"
+  "name": "cdk-lambda",
+  "version": "0.1.0",
+  "bin": {
+    "lambda": "bin/lambda.js"
   },
-  "dependencies": {
-    "aws-sdk": "^2.1490.0"
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
   },
   "devDependencies": {
-    "typescript": "^5.0.0",
-    "@types/node": "^20.0.0",
-    "@types/aws-lambda": "^8.10.0"
+    "@types/node": "22.13.10",
+    "aws-cdk": "2.1011.0",
+    "typescript": "~5.7.3"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.1011.0",
+    "constructs": "^10.0.0",
+    "source-map-support": "^0.5.21"
   }
 }
