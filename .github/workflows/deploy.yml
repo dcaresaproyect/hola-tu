@@ -36,7 +36,7 @@ jobs:
         working-directory: cdk/lambda
         run: npm install
 
-      - name: CDK Bootstrap (solo primera vez)
+      - name: CDK Bootstrap
         working-directory: cdk/lambda
         run: npx cdk bootstrap
 
